@@ -22,13 +22,8 @@ constructor(){
 
 
 
- public async execute(
-     to: string, 
-     subject: string,
-     variables:object, 
-     path:string 
-    ){
-const templateFileContent = fs.readFileSync(path).toString("utf8");
+async execute(to: string, subject: string, variables:object, path:string){
+const templateFileContent = fs.readFileSync(path).toString("utf-8");
 
 const mailTemplateParse = handlebars.compile(templateFileContent)
 
