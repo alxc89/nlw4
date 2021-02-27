@@ -36,7 +36,7 @@ const variables = {
 
 }
 
-const npsPath = resolve(__dirname, '..', 'views', 'emails', 'npsMail.hbs');
+const npsPath = resolve(__dirname, '..', 'views', 'emails', 'npsMails.hbs');
     
     
 if(survey){
